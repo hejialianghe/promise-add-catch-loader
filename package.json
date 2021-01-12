@@ -1,0 +1,24 @@
+{
+  "name": "add-promise-catch-loader",
+  "version": "1.0.0",
+  "description": "a loader adding catch",
+  "repository": "https://github.com/hejialianghe/add-promise-catch-loader",
+  "author": "hejialiang <984714129@qq.com>",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/parser": "^7.12.11",
+    "@babel/template": "^7.12.7",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "^6.26.0"
+  },
+  "devDependencies": {
+    "loader-runner": "^4.2.0"
+  }
+}
