@@ -6,13 +6,14 @@
   "author": "hejialiang <984714129@qq.com>",
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rm -rf lib"
+    "test": "node test/index.js"
   },
   "keywords": [
     "babel-plugin"
   ],
   "dependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/generator": "^7.12.11",
     "@babel/parser": "^7.12.11",
     "@babel/template": "^7.12.7",
     "babel-traverse": "^6.26.0",
