@@ -2,15 +2,8 @@
 
 > automatic loader without `promise` injection into `catch`
 
-自动为promise注入catch捕获错误的loader
+> 自动为promise注入catch捕获错误的loader
 
-## Install
-
-```bash
-npm i promise-add-catch-loader
-# or
-yarn add promise-add-catch-loader
-```
 ## Example
 
  before:
@@ -39,7 +32,7 @@ axios.then(res=>{
     console.log(err)
 })
 ```
-### weback config
+### webpack config
 
 ```diff
 module.exports = {
@@ -49,10 +42,10 @@ module.exports = {
             test: /\.js$/,
             use: [
             {
-            +  loader:'promise-add-catch-loader',
-                options:{
-                 catchCode:"console.log(err.message)"
-                }
++             loader:'promise-add-catch-loader',
++             options:{
++                 catchCode:"console.log(err.message)" // 不传默认console.error(err)
++              }
             }
           ]
       }
@@ -60,6 +53,12 @@ module.exports = {
   }
 }
 ```
+## options
+
+| key（键）|  value（值）| Default（默认值）| remarks（备注）|
+| :-----: | :--------: | :------------: | :------: | 
+|  catchCode |  string |  console.error(err) |  catch回调中逻辑代码  |
+
 
 
 
