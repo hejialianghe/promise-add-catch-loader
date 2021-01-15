@@ -3,6 +3,14 @@
 > automatic loader without `promise` injection into `catch`
 
 自动为promise注入catch捕获错误的loader
+
+## Install
+
+```bash
+npm i promise-add-catch-loader
+# or
+yarn add promise-add-catch-loader
+```
 ## Example
 
  before:
@@ -33,7 +41,7 @@ axios.then(res=>{
 ```
 ### weback config
 
-```js
+```diff
 module.exports = {
     module: {
     rules: [
@@ -41,7 +49,7 @@ module.exports = {
             test: /\.js$/,
             use: [
             {
-                loader:'promise-add-catch-loader',
+            +  loader:'promise-add-catch-loader',
                 options:{
                  catchCode:"console.log(err.message)"
                 }
