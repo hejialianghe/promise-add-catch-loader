@@ -2,7 +2,7 @@
 
 > automatic loader without `promise` injection into `catch`
 
-> 自动为promise注入catch捕获错误的loader
+> 自动为promise注入catch，捕获错误的loader
 
 ## Example
 
@@ -29,7 +29,7 @@ function axios (){
 axios.then(res=>{
   console.log('test1');
 }).catch(err=>{
-    console.log(err)
+    console.error(err)
 })
 ```
 ### webpack config
@@ -44,7 +44,7 @@ module.exports = {
             {
 +             loader:'promise-add-catch-loader',
 +             options:{
-+                 catchCode:"console.log(err.message)" // 不传默认console.error(err)
++                 catchCode:"console.log(err.message)" // 选填参数，不传默认console.error(err)
 +              }
             }
           ]
