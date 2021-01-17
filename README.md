@@ -4,6 +4,14 @@
 
 > 自动为promise注入catch，捕获错误的loader
 
+## Install
+
+```bash
+npm i promise-add-catch-loader -D
+# or
+yarn add promise-add-catch-loader -D
+```
+
 ## Example
 
  before:
