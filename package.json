@@ -7,6 +7,11 @@
     "url": "https://github.com/hejialianghe/promise-add-catch-loader"
   },
   "author": "hejialiang <984714129@qq.com>",
+  "license": "MIT",
+  "homepage":"https://github.com/hejialianghe/promise-add-catch-loader/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/hejialianghe/promise-add-catch-loader/issues"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "node _test/index.js",
