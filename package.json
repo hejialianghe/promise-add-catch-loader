@@ -9,7 +9,8 @@
   "author": "hejialiang <984714129@qq.com>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node _test/index.js"
+    "test": "node _test/index.js",
+    "release": "release-it"
   },
   "keywords": [
     "babel-plugin",
@@ -27,6 +28,7 @@
     "loader-utils": "^2.0.0"
   },
   "devDependencies": {
-    "loader-runner": "^4.2.0"
+    "loader-runner": "^4.2.0",
+    "release-it": "^14.2.2"
   }
 }
