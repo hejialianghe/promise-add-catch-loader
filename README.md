@@ -18,9 +18,9 @@ yarn add promise-add-catch-loader -D
 
  ```js
 function axios (){
-	return new Promise((resolve,reject)=>{
-      resolve('test')
-    })
+ return new Promise((resolve,reject)=>{
+     resolve('test')
+   })
 }
 axios.then(res=>{
   console.log('test1');
@@ -30,9 +30,9 @@ after:
 
 ```js
 function axios (){
-	return new Promise((resolve,reject)=>{
+  return new Promise((resolve,reject)=>{
       resolve('test')
-    })
+   })
 }
 axios.then(res=>{
   console.log('test1');
