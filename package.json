@@ -14,9 +14,9 @@
     "release": "standard-version"
   },
   "keywords": [
-    "babel-plugin-catch",
     "promise-catch-loader",
     "promise-add-catch-loader",
+    "babel-plugin-catch",
     "babel-plugin",
     "promise",
     "catch",
@@ -36,5 +36,10 @@
   },
   "devDependencies": {
     "loader-runner": "^4.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
