@@ -18,9 +18,9 @@ yarn add promise-add-catch-loader -D
 
  ```js
 function axios (){
-	return new Promise((resolve,reject)=>{
-      resolve('test')
-    })
+  return new Promise((resolve,reject)=>{
+     resolve('test')
+  })
 }
 axios.then(res=>{
   console.log('test1');
@@ -30,9 +30,9 @@ after:
 
 ```js
 function axios (){
-	return new Promise((resolve,reject)=>{
+  return new Promise((resolve,reject)=>{
       resolve('test')
-    })
+  })
 }
 axios.then(res=>{
   console.log('test1');
@@ -66,6 +66,8 @@ module.exports = {
 | key（键）|  value（值）| Default（默认值）| remarks（备注）|
 | :-----: | :--------: | :------------: | :------: | 
 |  catchCode |  string |  console.error(err) |  catch回调中逻辑代码  |
+
+
 
 
 

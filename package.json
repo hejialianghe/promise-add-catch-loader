@@ -7,11 +7,17 @@
     "url": "https://github.com/hejialianghe/promise-add-catch-loader"
   },
   "author": "hejialiang <984714129@qq.com>",
+  "license": "MIT",
+  "homepage":"https://github.com/hejialianghe/promise-add-catch-loader/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/hejialianghe/promise-add-catch-loader/issues"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "node _test/index.js",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "release-it": "release-it"
   },
   "keywords": [
     "promise-catch-loader",
@@ -32,7 +38,8 @@
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "loader-utils": "^2.0.0",
-    "standard-version": "^9.3.2"
+    "standard-version": "^9.3.2",
+    "release-it": "^14.2.2"
   },
   "devDependencies": {
     "loader-runner": "^4.2.0"
