@@ -1,6 +1,6 @@
 {
   "name": "promise-add-catch-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a loader adding catch",
   "repository": {
     "type": "git",
@@ -9,9 +9,14 @@
   "author": "hejialiang <984714129@qq.com>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node _test/index.js"
+    "test": "node _test/index.js",
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "keywords": [
+    "babel-plugin-catch",
+    "promise-catch-loader",
+    "promise-add-catch-loader",
     "babel-plugin",
     "promise",
     "catch",
@@ -24,7 +29,10 @@
     "@babel/template": "^7.12.7",
     "babel-traverse": "^6.26.0",
     "babel-types": "^6.26.0",
-    "loader-utils": "^2.0.0"
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "loader-utils": "^2.0.0",
+    "standard-version": "^9.3.2"
   },
   "devDependencies": {
     "loader-runner": "^4.2.0"
